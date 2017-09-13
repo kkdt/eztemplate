@@ -1,0 +1,210 @@
+RESIDENTIAL LEASE
+
+This LEASE AGREEMENT is made this ${day} day of ${month}, ${year}, by and between ${landlordName}, LANDLORD, and ${tenantName}, TENANT.
+
+THIS LEASE IS NOT GOVERNED BY THE VIRGINIA RESIDENTIAL LANDLORD AND TENANT ACT (§§ 55-248.2 et seq.Virginia Code).
+
+[${checkedLeasingAgent}] (Check if applicable) The landlord is non-resident owner defined in VA Code Section 44-218.1. The agent appointed by the landlord under this code provision for the purpose of service of process, notice, order or demand required or permitted by law to be served upon the landlord is ${leasingAgentName}. The agent's business address in Virginia is ${leasingAgentAddress}. The agent's name and address is also filed in the office of the Clerk of the Circuit Court for the county or city in which this rental unit lies.
+
+Check One
+
+[${checkedNotLeadBasedAct}] The property which is the subject of this Lease is NOT Target Housing within the meaning of the Residential Lead-Based Paint Hazard Reduction Act of 1992.
+
+[${checkedLeadBasedAct}] The property which is the subject of this Lease is Target Housing within the meaning of the Residential Lead-Based Paint Hazard Reduction Act of 1992. Housing built before 1978 may contain lead-based paint. Lead from paint, paint chips, and dust can pose health hazards if not managed properly. Lead exposure is especially harmful to young children and pregnant women. Before renting pre- 1978 housing, lessors must disclose the presence of lead-based paint and/or lead-based paint hazards in the dwelling. Lessees must also receive a federally approved pamphlet on lead poisoning prevention.
+
+For and in consideration of the rent herein agreed to be paid, and the rights, and obligations of the respective parties agreed to herein, the Landlord hereby leases to the Tenant above named, and the Tenant leases from the Landlord, the following rental unit on the terms and conditions as stated in this Lease. Where "you" or "yours" appears in this lease, it shall refer to the Tenant.
+
+1. PROPERTY ADDRESS: ${rentalAddress} 
+
+2. TERM OF LEASE: Tenant leases the rental unit of the period of ${totalMonths} months beginning ${leaseStartDate} and continuing until ${leaseEndDate} at which time the lease term ends and the Landloard is entitled to the return of the rental unit as more fully described later in this Lease.
+
+3. RENT TO BE PAID: The rent that the Tenant agrees to pay is ${totalRent} for the entire term, which is to be paid in monthly payments of ${monthlyRent} each month. The monthly payments are to be paid to the Landloard on the 1st day of each month.
+
+DUE WITHOUT DEMAND. The monthly rent is due without any prior demand from the landlord to pay it and is to be received by the landlord on the 1st day of each month. This means that you owe the rent without any type of billing, invoicing or notice from the Landlord and that it is Tenant's sole responsibility to ensure that the money is in the Landlord's possession on the 1st. Failure to pay your rent when due is a breach of this Lease.
+
+ADDITIONAL RENT. If this Lease requires the Tenant to pay any other money to anyone other than the Landlord, then the money that is to be paid to someone else is part of the rent obligation under this Lease and is accordingly defined as additional rent. Failure to pay any additional rent, is also a breach of this lease.
+
+METHOD OF PAYMENT. The rent shall be paid by check, or money order at the office of the Landlord at ${methodOfPayment} or at such other address as the Landlord shall direct. If the Landlord directs you to pay the money in some other way, such as certified check, cashier's check or money order only, then you will comply with that directive. A failure to comply with that directive is also a breach of the lease.
+
+DUE WITHOUT REDUCTION OR OFFSET. The rent is due without any reduction, or deduction from it. If you reduce your rental payment to the Landlord you will be in breach of this Lease and subject to eviction by the Landlord regardless of any claim you may have against the landlord. You are not permitted to reduce your rent, withhold your rent, or escrow your rent. You place your right to remain in possession at risk should you attempt any such reduction, offset, withholding or escrow.
+
+PRORATION FIRST MONTH: The first rent payment is due at the time you sign this Lease and covers the first month of the Lease. If you sign the lease on a date other than the 1st day of the month, then the rent you will pay for the first month will be in an amount representing the number of days remaining in the month from the date you signed. The next rent payment will be due on the 1st day of the next month for the full amount of the monthly rental payments.
+
+4. OCCUPANCY. The rental unit may only be used as a dwelling unit. The Tenant agrees that he will not permit more than ${maxOccupancy} persons to occupy the rental unit. Failure to comply with this promise as well as any other promise you have made in this Lease is a breach of the Lease. If any occupant is not a member of Tenant's immediate family than approval by the Landlord for that person to live there must be first obtained. This is so even if that person's presence on the rental unit does not make the total number of people living there exceed the limit on the number of people allowed to live there which is stated above.
+
+5. SECURITY DEPOSIT. Tenant hereby gives to Landlord a security deposit in the sum of ${securityDeposit}. The Landlord shall hold this as security until the end of this Lease and until the unit is vacated. After it is vacated, the Landlord may inspect the rental unit to determine if it has been damaged in any way. You are liable to the Landlord for any damage to the unit other than reasonable wear and tear. If the Landlord determines that there is any damage in the unit for which you are liable, any unpaid rent due to the Landlord, or if there are any other damages or charges which the Landlord asserts you are liable for, he may apply the security deposit to cover those items. This deposit may not be used as the last month's rent. Any attempt to use the deposit as the last month's rent is a breach of the lease.
+
+If the Tenant vacates the rental unit before the end of the term or any extensions thereof, the Tenant shall be liable to the Landlord for all damages, including the costs of re-decoration, including painting and cleaning, plus all damages which the law permits including Landlord's loss of rent and the costs associated with obtaining a new tenant until the apartment is re-rented.
+
+The Tenant is not entitled to any interest on the deposit, unless otherwise required by law. At the time of this lease signing, the law does not require the payment of interest. If the Tenant assigns or sublets this unit, with the consent of the landlord, the new Tenant shall not be entitled to the security deposit unless the document of assignment specifically states that the security deposit is transferred to the new Tenant.
+
+6. GOOD CONDITION. The tenant has had the opportunity to inspect the property before taking possession and hereby acknowledges that he has received the dwelling in good condition. There are no defects in the property except those identified by the tenant, in writing to the landlord, before taking possession, unless the defect was not visible or reasonably discoverable before occupancy, in which case the tenant shall notify the landlord of such defects which tenant claims are preexisting within 5 days after taking possession. Other than what is written in this Lease, the Tenant acknowledges that the Landlord has not made any promises as to the condition of the rental unit or as to any specific repairs, alterations or improvements.
+
+7. DELIVER OF POSSESSION. Possession shall be delivered to Tenant upon execution of this Lease. If the Landlord is unable to deliver possession for reasons beyond his control, then the Tenant may terminate the Lease on 5 days written notice to the Landlord or he may abate the rent until delivery takes place. The landlord will not be liable to the Tenant for any delay unless the delay is caused by the landlord's willful conduct in not delivering possession.
+
+If the Landlord permits the Tenant to take possession before the beginning date of this Lease, then the Tenant agrees to be bound to the terms of this Lease for such period of time and to pay such rent as represents the prorated amount for the period actually in possession.
+
+8. REPRESENTATIONS TO THE LANDLORD. The Tenant has made certain representations to the Landlord about his credit history, rental history, financial affairs, and other relevant information, in order to induce the Landlord to rent this rental unit to the Tenant. This Lease has been entered into in reliance by the Landlord on this information. In the event any of that information is untrue or misleading or incomplete then the Landlord reserves unto himself the right to cancel this Lease within a reasonable time after discovery by the Landlord of the truth. Under this circumstance, the Tenant shall immediately vacate the rental unit and shall be liable to the Landlord for all of his costs, expenses and damages that he may suffer by reason of the Tenant's misrepresentation, including Landlord's reasonable attorney's fees incurred.
+
+9. LATE CHARGES, GRACE PERIOD. If Tenant fails to pay his rent on or before the 5th day of the month the Tenant shall pay as additional rent, a late charge of ${lateFee}. Tenant's failure to pay the late charge when it is due is a breach of the lease. The failure of a Landlord to insist on the payment of a late fee when the rent is late, shall not be deemed a waiver by the landlord of any late charge, whether then due and owing or any future late charge.
+
+10. ASSIGNMENT AND SUBLETTING. Tenant may not assign or sublet this rental unit or any portion of it without the express written consent of the Landlord obtained in advance. This means you may not bring in "roommates" or rent out any of the rooms to someone else without the landlord's consent. Failure to comply with this promise as well as any other promise you have made in this Lease will constitute a breach of the Lease.
+
+For example, to bring in a "roommate" without the consent of the landlord is an unlawful subletting and is a breach of this lease. The Landlord has the right to approve who lives in his unit. If Tenant is a corporation, limited liability company or a partnership of any type, the liquidation, termination, or dissolution or discontinuance in business of such organization shall be deemed a termination of this Lease by the Tenant and a breach hereof. In addition, if Tenant is a corporation, limited liability company or a partnership, general or limited, then the transfer by any owner of any shares of stock or partnership interest to anyone else shall be deemed an assignment of this Lease requiring prior Landlord's approval. This applies regardless of whether the transfer is of a controlling interest or not.
+
+In the event the landlord sells, transfers or assigns the property which is the subject of this Lease or his interest in this Lease to another, then the landlord shall be relieved of liability under this Lease from the date of the transfer, including liability for the security deposit. Moreover, Where the Landlord sells the property to another, the buyer shall become liable under this Lease for all of its terms and conditions and the selling Landlord shall be relieved of liability under the Lease after giving notice of the conveyance to the Tenant.
+
+11. RULES AND REGULATIONS. The Tenant understands and agrees that any Rules and Regulations that are in effect now or that may be adopted at a later time by the Landlord are a part of this Lease as if they were written into it and that the Tenant is obligated to comply with all of them. A failure by the Tenant to comply with any of such Rules and Regulations is a breach of this Lease. The duty to comply with the Rules and Regulations binds not only the Tenant but his family, his guests, and any person on the premises with his consent. A copy of the rules and regulations now in effect are attached hereto and made a part hereof.
+
+The Landlord has the right to change these Rules and Regulations and the modified Rules and Regulations are also fully binding on the Tenant, his family, his guests, or persons on the rental unit with his consent.
+
+12. NOISE AND NUISANCE. The Tenant shall conduct himself, and require other persons on the premises with his consent, whether known by tenant or not, to conduct themselves , in a manner that will not disturb his neighbor's peaceful enjoyment of the premises. The Tenant will not conduct any unlawful activity on the premises. The Tenant will not conduct any business on the premises, including, but not limited to baby-sitting.
+
+The Tenant will be deemed in breach of this provision of the Lease if he or anyone else on his rental unit performs or permits any vocal activity, or plays or permits the playing any musical instrument, radio, television, stereo, cd, tape player, or any other sound emitting device in such a manner as to disturb the peace and quiet of any neighbor. Failure to comply with this promise as well as any other promise you have made in this Lease is a breach of the Lease.
+
+In addition, Tenant, any member of his family, guests, or any other person on the premises with his consent, shall not conduct himself in an objectionable or improper manner causing annoyance to other tenants in the building or on the project. Such conduct shall be a breach of this Lease.
+
+In the event the conduct of the Tenant involves criminal or willful conduct which cannot be remedied and which poses a threat to health or safety, the Landlord may terminate the Lease without notice and proceed to obtain possession.
+
+13. PETS. Tenant may not keep, maintain, or permit the visit on the premise for any period of time (regardless of how long a visit it is), of any pet of any kind, without the express consent of the Landlord.
+
+Fish tanks which hold more than five gallons of water are prohibited unless approved by the Landlord in advance. Tenant will be liable for any and all water damage to the rental unit caused by the presence of the fish tank even if the Tenant is without fault in causing the damage.
+
+If this box is checked, [${checkedAllowPets}], then this paragraph will be applicable to the Lease; otherwise, it is not. The Tenant is permitted to keep the following described pet on the premises: ${allowedPets}. If the pet dies or is otherwise removed from the premises, then the Tenant must first obtain additional permission from the Landlord to bring another pet unto the premises. The Tenant is liable for any and all damages caused by the Pet.
+
+14. CLEAN AND NEAT. The Tenant shall keep the rental unit he is occupying clean and safe. He will remove from the unit all ashes, garbage, rubbish and other waste in a clean and safe manner and in the appropriate receptacles provided by the Landlord, if such disposal is provided by the Landlord. If not provided by the Landlord, then the Tenant is responsible to arrange for trash pick up and removal at his own expense.
+
+The Tenant will keep all plumbing fixtures clean as their condition permits.
+
+The Tenant will use the utilities, and all electrical, plumbing, sanitary, heating, ventilating, air-conditioning and other facilities and appliances, including elevators, if any, in a reasonable manner.
+
+15. DAMAGE BY TENANT. The Tenant will not deliberately, negligently, or otherwise destroy, deface, damage, impair or remove any part of the premises or permit any person to do so whether known by the Tenant or not. If any such damage occurs, then the Tenant shall be liable to the Landlord for the cost of repair, or maintenance, or replacement of any such damaged part of the premises, including appliances, equipment and fixtures. This obligation applies regardless of whether the damage or defect was the result of the tenant's fault or neglect. This obligation does not require the tenant to rebuild the property destroyed by fire or other casualty unless the destruction was caused by the fault or neglect of the tenant. Where used herein, "tenant" includes any person occupying the property, as a guest, or otherwise with the consent of the tenant.
+
+Tenant agrees to return the rental unit to the Landlord at the end of the lease in the same condition as received, reasonable wear and tear excepted. The tenant expressly covenants and agrees that at the termination of the lease all appliances and equipment will be in good working order and shall be operative and that the premises will be in good clean condition, ordinary wear and tear excepted. All plumbing fixtures, facilities and appliances shall be kept clean, unstopped and clear of all waste.
+
+16. LOCAL CODES. The Tenant shall comply with all obligations primarily imposed upon tenants by applicable provisions of building and housing codes materially affecting health and safety.
+
+17. ACCESS. The Tenant shall not unreasonably withhold consent to the Landlord to enter into the rental unit at reasonable times, in order to inspect it, make necessary or agreed repairs, decorations, alterations or improvements, supply necessary services or exhibit the rental unit to prospective or actual purchasers, mortgagees, tenants, workmen or contractors. In an emergency, the Landlord may enter the rental unit without the consent of the Tenant.
+
+The Landlord will not abuse this right of access or use it to harass the Tenant. Unless there is an emergency, or it is not practicable to do so, the Landlord shall give the Tenant reasonable notice of his intent to enter.
+
+If the Tenant has abandoned or surrendered the premises, the Landlord has the right of access.
+
+The Tenant must provide the Landlord with a duplicate key for any and all locks on the doors and windows. Failure to comply with this promise as well as any other promise you have made in this Lease is a breach of the Lease.
+
+18. ALTERATIONS, etc. The Tenant shall not make any alterations or modifications to the unit, including painting or wallpapering, installation of bookcases, shelves, cabinets, or structures of any kind, without the express written consent of the Landlord obtained in advance.
+
+The Tenant may install, within his apartment, a new burglary prevention and fire detection device(s) that the Tenant believes may be necessary to insure his safety, provided, however, that (l) the installation does no permanent damage to any part of the apartment, (2) a duplicate set of all keys and instructions of how to operate all devices are given to the Landlord or Landlord's agent, and (3) upon termination of the tenancy, the Tenant shall, upon request of the landlord, remove all such devices and repair all damage.
+
+The Tenant may hang pictures and place picture hocks in the walls so long as the Tenant repairs all of such holes prior to leaving the rental unit at the end of the tenancy.
+
+19. NOTICE OF DAMAGE. The Tenant must immediately notify the Landlord when there is a malfunction of any appliance, fixture or any plumbing problem or other defect or damage in or to the premises.
+
+20. UTILITIES. The Tenant is responsible to provide and pay for all of the utilities for the rental unit. The water, electricity and gas (if applicable) are to be separately metered or billed solely in tenant's name. A failure of the Tenant to pay for such utility shall be a breach of this Lease.
+
+21. MILITARY PERSONNEL. If the Tenant is a member of the armed forces of the United States or a member of the Virginia National Guard serving on full-time duty or as a Civil Service technician with a National Guard unit, he may terminate this Lease if he :
+
+a. Has received permanent change of station orders to depart 35 miles or more from the location of the rental unit; or
+
+b. Has received temporary duty orders to be 35 or more miles from the location of the rental unit in excess of three month's duration; or
+
+c. Has been discharged or released from active duty with the armed forces of the United States or from his full-time duty or technician status with the Virginia National Guard; or
+
+d. Has been ordered to report to government-supplied quarters resulting in the forfeiture of basic allowance for quarters.
+
+Tenant must, however, serve a written notice of termination on the Landlord, which is to be effective no less than 30 days after the first date on which the next rental payment is due, and no greater than 60 days before the date of departure. The Tenant shall furnish the Landlord with official notification of the orders or a letter signed by the Tenant's commanding officer confirming the change of status.
+
+Tenant is not relieved of any of his other duties under the Lease or applicable Virginia law. Any willful or intentional misrepresentation by the Tenant to the Landlord under this early termination provision or in providing the Landlord with false discharge or anticipated retirement dates on the application will render you liable to the Landlord for breach of this Lease, fraud and deceit thereby entitling the Landlord to claim not only his compensatory damages but also punitive damages under Virginia's tort law.
+
+22. CARPETING. In the event that carpeting is not provided by the Landlord, and in order to eliminate any noise caused or occasioned within the unit, Tenant shall install and maintain rugs or carpeting along with padding covering 85 % of the floor area in the unit (excluding the kitchen, bathrooms and closets). Said carpeting is to be installed within 30 days of Tenant's first occupancy of the unit. If Tenant elects to install wall to wall carpeting, its installation must be without the use of nails, staples, brads or tacks; i.e. the tackless method. Molding in the unit is not to be removed. Any damage to the floor as a result of the installation or placement carpeting or padding shall be paid entirely by the Tenant.
+
+In the event that carpeting is provided by the Landlord, then the Tenant shall have the carpeting cleaned before returning the unit to the Landlord at the expiration of the term, regardless of whether lease termination has been voluntary or involuntary and regardless of the reason for termination. Any damage to the carpet which is not repaired, or stains which are not cleaned before returning the unit to Landlord shall be items of damage assessed against the Tenant, and Tenant shall also be liable for the Landlord's cost to replace the carpet in the event it cannot be repaired or cleaned.
+
+23. ABANDONMENT. If Tenant is to be away from the unit for a period of more than 7 days then Tenant must notify Landlord in advance. In the absence of such a notice, the Landlord may enter the unit to protect the rental unit or may deem the rental unit to be abandoned.
+
+If the Tenant shall abandon, be removed from the unit for cause, quit or vacate the same, voluntarily or involuntarily, the Landlord may at his sole election:
+
+a. Enter the rental unit to re-let same as the Landlord deems appropriate. The landlord shall then begin the process of reletting the property;
+
+d. Enter the property and accept Tenant's abandonment thereby terminating the lease;
+
+c. Refuse to accept the abandonment and do nothing.
+
+Under any circumstances and under any election by the landlord, the Tenant will be liable to the landlord for any damages that the Landlord may suffer by reason of the abandonment or vacation of the unit and breach of lease including all cost of repainting, fix up and the like to restore the unit for a new rental. In the absence of any express statement by the landlord that he is accepting the abandonment and terminating the lease, it shall be presumed that he is entering to re-let and the liability of the tenant under the lease shall continue less credit for any rental received from a new tenant. All notices required by §55-224 Va. Code are hereby waived by the parties. Landlord may reenter without notice to Tenant.
+
+24. LANDLORD'S LIEN. The Landlord has a Landlord's Lien upon all of Tenant's belongings and property within the rental unit which lien secures the Landlord for any unpaid rent. This lien exists automatically upon the signing of the Lease and continues until all obligations of the Lease are paid, as provided by Virginia law. This lien may be enforced by distress or by any other action provided by law to obtain the sale of the Tenant's property to satisfy any unpaid rent. Removing the property by the Tenant will not defeat the Landlord's Lien. As provided by statutes, the Landlord's Lien will follow the Tenant's belongings.
+
+25. HAZARDS. The Tenant may not permit any act or thing to be done that will increase the risk of fire or that will increase the rate of insurance on the rental unit, such as for example, keeping of gasoline or other combustible materials on the rental unit. Failure to comply with this promise as well as any other promise you have made in this Lease is a breach of the Lease.
+
+26. DAMAGE TO RENTAL UNIT. In the event there is damage to the rental unit which is not caused by the deliberate act or through the negligence of the Tenant, member of this family, guest, roomer, or any other person on the rental unit with his consent, and under the terms of this lease the tenant is not obligated to repair, maintain or replace it, then said damage shall be repaired by the Landlord.
+
+In the event the damage is caused by wind, water, snow, ice, or any combination of them, or any other act of nature, war, arson, terrorism, vandalism or any intentional act of some one other than the Landlord or his employee, only the damage to the building and the structure of the rental unit will be repaired. The Landlord will not be liable for any damage that may befall the Tenant's personal property unless said damage was caused by the negligence or willful conduct of the Landlord or of an employee of Landlord. The Landlord expects the Tenant to maintain his own hazard insurance policy to protect against such possible losses. This is not an obligation undertaken by the Landlord.
+
+For example, if the water pipes freeze and burst, the resulting damage to the contents of Tenant's rental unit will not be responsibility of the Landlord unless the Landlord or his employee has been negligent or willful and such conduct was the direct cause of the pipes bursting.
+
+In the event the rental unit becomes uninhabitable by reason of extensive damage, then the rent shall abate until such time as the rental unit shall be restored to habitable condition. Landlord shall have the right, however, to restore the unit or to terminate the Lease. If the cause of the casualty is not the fault or negligence of the Tenant, then the Tenant may elect to vacate the unit and terminate the Lease with a 14 day written notice to Landlord. If the Tenant or the Landlord elects to terminate the Lease under these conditions, then the accounting for the rent and deposit shall be as of the date of the vacancy of the unit.
+
+27. NOTICE AT END OF LEASE,HOLDOVER TENANT. Tenant shall give the Landlord at least 30 days written notice prior to the end of the term of this Lease of his intent to vacate the property at the expiration date of the Lease. If Tenant does not give this notice to Landlord then Tenant shall be a holdover Tenant either as a month to month basis under the same terms and conditions of this Lease, or as a tenant at sufferance, which election shall be in the sole discretion of the Landlord. If the Tenant is held over as a month to month Tenant, then either party may terminate the Lease by giving the other a 30 day written notice to terminate, which notice must be no less than 30 days prior to the next rent due date.
+
+Landlord may give the Tenant a written 30 day notice to vacate at the expiration date of the Lease. In the event Tenant fails to vacate after receiving such notice, then Tenant shall be in breach of the Lease and Landlord shall be entitled to recover possession without further notice to quit.
+
+28. MOTOR VEHICLES. Repair of motor vehicles, or any part thereof, within the rental unit or anywhere on the Landlord's property which is part of the project of which the rental unit is a part, is strictly forbidden. Oil changes and lubrication of any kind, including changing of the radiator fluid, brake fluid, transmission fluid, windshield washer fluid, or any type or kind of fluid in the vehicle is strictly prohibited. In addition to being a breach of the Lease and subjecting the Tenant to dispossession and damages, the Tenant may be held liable for any breach of applicable environmental laws.
+
+No motor vehicle of any kind, may be stored in any rental unit, any storage area, hallway or any location other than the parking area, if any is provided, designated by the Landlord.
+
+29. LANDLORD'S DUTY TO MAINTAIN FIT PREMISES. The statutory duties applicable to the landlord under § 55-225.3 Va. Code are amended as follows: Unless the duty of repair, maintenance or replacement has been placed on the tenant by the other provisions of this lease, the Landlord will comply with all applicable building and housing codes. If there are common areas over which the Landlord controls, the landlord agrees to keep all common areas shared by two or more rental units of the premises in a clean and structurally safe condition, maintain in good and safe working order and condition all electrical, plumbing, sanitary, heating, ventilating, air-conditioning and other facilities and appliances, including elevators, supplied by him. If the Tenant is obligated under another provision of this Lease to provide his own utility then the duty to maintain same shall be upon the Tenant and not the Landlord.
+
+30. DEFAULT. In the event the Tenant fails to pay the agreed upon rent when it is due, then the Landlord may terminate the Lease, reenter and obtain a judgment for possession, costs and damages, plus all reasonable attorney fees, after having given the Tenant a 5-day notice to pay or quit and the Tenant has failed to cure the non-payment in full within the said 5-day period. Failure by the Tenant to cure the default in full within said 5-day period shall operate to terminate the Lease. In the event the tenant offers to pay all rents and damages of the landlord after the 5-day cure period has expired, then the landlord may accept or reject said payment and may refuse to reinstate the lease. The provisions of §55-243 (How Judgment of Forfeiture Avoided) are hereby waived by the Tenant. Moreover, the landlord may accept the payment in full of all money due and owing under a reservation of right or without prejudice thereby reserving the right to proceed in an action for possession based on the breach even though the rent has been paid in full.
+
+The tender of a check is not legal tender. If the tenant gives a check to the landlord which is not paid, for any reason whatsoever, the landlord may treat the bad check the same as if the rent was not paid at all. If a 5-day notice to pay or quit has already been given to the tenant, the bad check will not be considered as a payment thereunder. If no 5-day notice has been given, then the landlord shall give the tenant a 5-day notice to pay or quit the same as if no rent check had been tendered.
+
+In the event the Tenant's breach is a material non-compliance or a violation of the Tenant's duty to maintain the property set forth in the Lease then the Landlord may serve a written 10 day notice to cure said breach. If said breach is cured within said 10 days, then the Lease will not terminate. If the breach is not cured within said 10 day period, then the Lease shall automatically terminate at the expiration of said 10 day cure period. If a breach by Tenant occurs but is cured after receipt of the 10 day notice to cure, but then a similar breach thereafter takes place, then the Landlord may terminate the Lease by giving a 5 day notice to terminate the Lease without any additional opportunity to cure by the Tenant.
+
+In the event the conduct of the Tenant involves criminal or willful conduct which cannot be remedied and which poses a threat to health or safety, the Landlord may terminate the Lease without notice and proceed to obtain possession. In the event the tenant has been arrested, or convicted as a principal, in a crime, whether felony or misdemeanor, involving the sale, manufacture or distribution of illegal drugs of any kind, then there shall be a strong, but rebuttal, presumption in any civil proceeding against the tenant seeking his eviction, that he has been involved with such criminal or willful conduct and that the landlord is entitled to possession in the absence of satisfactory proof by the tenant to the contrary.
+
+All of the rent for the then current term shall become due and payable, whether or not such rent has accrued. Landlord shall have the right to re-enter and resume possession of the property and to distrain of rent and also to re-let the property. No such entry by the landlord shall constitute either a surrender or deprive the landlord of any other right, action, or proceeding for rent, possession or damages by statute, this lease, or otherwise, plus reasonable attorney's fees.
+
+ATTORNEY'S FEES: Regardless of the reason for tenant's breach of the lease, in the event the tenant is in breach of this lease, the landlord shall be entitle to recover all of his damages, accrued unpaid rent and reasonable attorney's fees and court costs.
+
+31. JURY TRIAL. The Tenant hereby waives trial by jury in any proceeding between the parties for whatever cause.
+
+32. WAIVER. No waiver of any breach by the Tenant shall be deemed a waiver of any future breach of the Tenant. In the event there is a breach by not paying the rent and the time to cure has passed, the Landlord may, in Landlord's sole discretion, accept (1) performance in any form, manner or timing from Tenant and (2) Landlord may also accept the payment of rent or other charges, in whole or in part, from the Tenant or on behalf of the Tenant, after a breach or event of default by Tenant has occurred without the acceptance of the rent or acceptance of performance by the Tenant constituting an estoppel of the Landlord or a waiver of said breach or event of default, in whole or in part. The Landlord, in accepting said rent or performance, may, but is not required to send a notice of the Landlord's reservation of rights by accepting the rent.
+
+A waiver of one breach will not constitute a waiver of any subsequent breach.
+
+33. SUBORDINATION. This Lease is subject to all present and future mortgages, deeds of trust, and security agreements put in place by the Landlord, which affect the premises. The Tenant shall execute and deliver, upon the request of the Landlord, any and all necessary documents to subordinate this Lease to any such mortgage, deed of trust, or security agreement.
+
+34. CONDEMNATION. In the event the rental unit and or the premises on which it is a part is taken, in whole or in part, by governmental condemnation, this Lease shall terminate. The Tenant hereby specifically waives any claim to any portion of any award for compensation or damages made for the taking of the property. Any fixtures installed or erected on the leased shall remain the property of the landlord and shall not be removable by the tenant at the expiration of or termination of this lease nor may said fixtures form the basis of any claim by Tenant.
+
+35. DIPLOMATS. Tenant represents to the Landlord that he/she is not a person entitled to the protection of the Vienna Convention on Diplomatic Relations as adopted by the United States, and that said Tenant and his family they are not immune from a suit for possession in the jurisdiction of the courts of the jurisdiction within which the rental unit lies.
+
+36. GUARANTORS. Any persons signing this Lease, not as a Tenant, but as a guarantor hereby unconditionally guarantee to the Landlord the payment of all rent, additional rent, damages, fees, costs, and the performance of any and all obligations of the Tenant under this Lease and any extensions,and modifications thereof as well as liability under any holdover provisions. All guarantors hereby waive notice from the Landlord of any breach by Tenant, extension of the Lease, modification of the Lease, or any change to the rental agreement between the Tenant and Landlord. Guarantors also waive notice of any breach, notice to cure, cure, waiver, notice to quit, forbearance by Landlord, or forgiveness by Landlord between the Tenant and Landlord. Guarantors are liable for all costs, damages, and reasonable attorney's fees incurred by the Landlord in collecting under the Lease as well as collecting against the guarantors hereunder.
+
+Guarantors may not terminate this guaranty without the express written consent of the Landlord.
+
+37. LOCKS. No additional locks shall be permitted upon any doors without the consent of the Landlord. Should any additional lock be placed on the rental unit, a duplicate key thereto must be
+provided to the Landlord.
+
+38. GENDER, CONTEXT. Where the context of the Lease requires, the words in the singular shall be substituted for the plural and vice versa and words in the masculine shall be substituted by any gender.
+
+39. DEATH AND BINDING EFFECT. This Lease and all of its covenants, conditions, terms and provisions are binding upon and shall inure to the benefit of the successors and assigns of Landlord, his heirs, executors, administrators and where permitted, the assigns of the Tenant. The Tenant's death terminates this Lease unless a spouse is also on the Lease in which case the Lease may be continued by said spouse if he/she so chooses.
+
+40. CONDOMINIUM. In the event this rental unit is part of a condominium regime or some other form of a home owners association, the Tenant agrees to be bound to all of the terms and conditions of the Declaration, the Associations By-laws, and all of the rules and regulations promulgated by said Association and/or Board of Directors. A breach by Tenant of any terms and conditions of such regimes shall be deemed a breach of this Lease.
+
+Tenant further agrees to pay all monthly condominium dues or other home owner association dues as they become due. This is additional rent, and a breach hereof is a breach of the Lease.
+
+41. REPRESENTATIONS. The parties acknowledge that the Landlord and his agents have not made any promises, or representations other than those contained in this agreement. The Tenant understands that if a promise, or representation by the Landlord is made before signing this Residential Lease but is not written into this Residential Lease, then such promise, or representation is not binding on the Landlord.
+
+IF TENANT WANTS A PRIOR PROMISE TO BE BINDING ON THE LANDLORD, THEN SUCH PROMISE MUST BE WRITTEN INTO THIS RESIDENTIAL LEASE.
+
+Witness our hands and seals, the date, month and year above stated.
+
+
+
+
+Date: ${signatureDate}    Landlord: ${signatureLandlord}
+
+
+
+
+Date: ${signatureDate}    Landlord: ${signatureTenant}

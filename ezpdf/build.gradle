@@ -1,0 +1,63 @@
+/**
+ * Copyright (C) 2017 thinh ho
+ * This file is part of 'eztemplate' which is released under the MIT license.
+ * See LICENSE at the project root directory.
+ */
+
+description = 'PDF template generation'
+
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:1.1.8.RELEASE"
+        classpath "gradle.plugin.edu.sc.seis:macAppBundle:2.1.7"
+    }
+}
+
+apply plugin: 'distribution'
+apply plugin: 'spring-boot'
+
+if(System.properties['os.name'].contains('Mac')) {
+    println 'Building on a Mac OSX - applying edu.sc.seis.macAppBundle'
+    apply plugin: "edu.sc.seis.macAppBundle"
+    
+    macAppBundle {
+        appName = 'ezpdf'
+        mainClassName = "kkdt.ezpdf.EzPdf"
+        icon = "src/dist/Default.icns"
+        bundleJRE = true
+        backgroundImage = "src/dist/Default.png"
+        javaProperties.put("apple.laf.useScreenMenuBar", "true")
+    }
+}
+
+jar {
+    manifest {
+        attributes(
+            "Name": project.name,
+            "Specification-Title": "eztemplate",
+            "Specification-Version": version,
+            "Specification-Vendor": "kkdt.one",
+            "Implementation-Title": project.name,
+            "Implementation-Version": version,
+            "Implementation-Vendor": "me@kkdt.one"
+        )
+    }
+}
+
+dependencies {
+    compile project(':eztemplate-pdf')
+    compile 'log4j:log4j:1.2.17'
+    compile 'commons-logging:commons-logging:1.1.3'
+
+    compile('org.springframework.boot:spring-boot-starter:1.5.1.RELEASE') {
+        exclude module: 'spring-boot-starter-logging'
+        exclude module: 'spring-boot-starter-log4j'
+    }
+}
+

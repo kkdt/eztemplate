@@ -1,0 +1,12 @@
+/**
+ * Copyright (C) 2017 thinh ho
+ * This file is part of 'eztemplate' which is released under the MIT license.
+ * See LICENSE at the project root directory.
+ */
+
+description = 'Lightweight template generation library'
+
+dependencies {
+    testCompile 'commons-lang:commons-lang:2.6'
+    testCompile 'commons-io:commons-io:2.5'
+}

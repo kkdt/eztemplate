@@ -1,0 +1,18 @@
+/**
+ * Copyright (C) 2017 thinh ho
+ * This file is part of 'eztemplate' which is released under the MIT license.
+ * See LICENSE at the project root directory.
+ */
+
+description = 'PDF template generation'
+
+dependencies {
+    compile project(':eztemplate-core')
+    
+    compile 'com.itextpdf:kernel:7.0.4'
+    compile 'com.itextpdf:io:7.0.4'
+    compile 'com.itextpdf:layout:7.0.4'
+    compile 'commons-lang:commons-lang:2.6'
+    compile 'commons-io:commons-io:2.5'
+}
+
