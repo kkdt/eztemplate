@@ -11,7 +11,7 @@ This project comprises of 3 modules that provide a way for the user to generate 
 
 ## ezpdf
 
-![alt text](ezpdf/ezpdf_screenshot.png?raw=true "Ez Pdf")
+![alt text](ezpdf/ezpdf_screenshot.png "Ez Pdf")
 
 Ez Pdf is a simple standalone, thick-client application that runs on the user's local machine. Application data is saved in `$HOME/.ezpdf` which only includes a log file. Prebuilt application artifacts on Dropbox can be found below and support Mac, Windows and Linux.
 
@@ -23,7 +23,9 @@ Sample input files are included with this project.
 
 1. lease.txt - Example template text file.
 2. lease.properites - Dictionary that fills in the lease above with empty blank lines - essentially for form for you to manually write in the values.
-3. parkter.properties - Dictionary that fills in the lease above with values.
+3. parker.properties - Dictionary that fills in the lease above with values.
+
+Image icons for ezpdf are provided by [xinhstudio](https://www.iconfinder.com/xinhstudio).
 
 ## Building
 Gradle builds the application and uses the following plugins to build distributable artifacts.
