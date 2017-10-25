@@ -1,6 +1,6 @@
 # eztemplate
 
->I have a document that I manually fill in on a regular basis - print it out, fill in the necessary blanks, and then finally give it to clients. This project facilitates my use-case for automatically generating a PDF document based on a template and a set dictionary.
+>I have a document that I manually fill in on a regular basis - print it out, fill in the necessary blanks, and then finally give it to the intended person. This project facilitates my use-case for generating a PDF document based on a template and a set dictionary.
 
 ## Overview
 This project comprises of 3 modules that provide a way for the user to generate a PDF document from a template and a dictionary. The modules:
@@ -19,13 +19,17 @@ Ez Pdf is a simple standalone, thick-client application that runs on the user's 
 2. Linux/Windows [ezpdf-0.1.tar](https://www.dropbox.com/s/x6wzebfdhp73njl/ezpdf-0.1.tar?dl=0)
 3. Linux/Windows [ezpdf-0.1.zip](https://www.dropbox.com/s/cjuyd60ccmab08p/ezpdf-0.1.zip?dl=0)
 
+### Common Use Case
+
+1. Create a text file template document with placeholders - i.e. `${tenantName}`
+2. Create a properties dictionary file that maps placeholders to their value - i.e. `tenantName=Peter Parker`
+3. Use `ezpdf` and pass in template and dictionary to generate the finalized document
+
 Sample input files are included with this project.
 
 1. lease.txt - Example template text file.
 2. lease.properites - Dictionary that fills in the lease above with empty blank lines - essentially for form for you to manually write in the values.
-3. parker.properties - Dictionary that fills in the lease above with values.
-
-Image icons for ezpdf are provided by [xinhstudio](https://www.iconfinder.com/xinhstudio).
+3. lease_dictionary.properties - Dictionary that fills in the lease above with values.
 
 ## Building
 Gradle builds the application and uses the following plugins to build distributable artifacts.
@@ -33,6 +37,7 @@ Gradle builds the application and uses the following plugins to build distributa
 1. [Gradle](https://docs.gradle.org/current/userguide/distribution_plugin.html) `distribution`
 2. [Spring](https://docs.spring.io/spring-boot/docs/current/reference/html/build-tool-plugins-gradle-plugin.html) `spring-boot`
 3. [crotwell](https://github.com/crotwell) [MacApp Bundle](https://github.com/crotwell/gradle-macappbundle)
+4. Image icons for `ezpdf` are provided by [xinhstudio](https://www.iconfinder.com/xinhstudio).
 
 ```
 gradle clean build
