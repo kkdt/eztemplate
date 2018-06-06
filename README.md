@@ -25,12 +25,12 @@ Ez Pdf is a simple standalone, thick-client application that runs on the user's 
 2. Create a properties dictionary file that maps placeholders to their value - i.e. `tenantName=Peter Parker`
 3. Use `ezpdf` and pass in template and dictionary to generate the finalized document
 
-Note: In the template, you can specify `<%newpage%>` where you want a break break to occur.
+Note: In the template, you can specify `<%newpage%>` where you want a page break to occur.
 
 Sample input files are included with this project.
 
 1. lease.txt - Example template text file.
-2. lease_empty.properites - Dictionary that fills in the lease above with empty blank lines - essentially the form for you to manually write in the values.
+2. lease_empty.properties - Dictionary that fills in the lease above with empty blank lines - essentially the form for you to manually write in the values.
 3. lease.properties - Dictionary that fills in the lease above with sample values.
 
 ## Building
