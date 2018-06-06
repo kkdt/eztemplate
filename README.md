@@ -28,8 +28,8 @@ Ez Pdf is a simple standalone, thick-client application that runs on the user's 
 Sample input files are included with this project.
 
 1. lease.txt - Example template text file.
-2. lease.properites - Dictionary that fills in the lease above with empty blank lines - essentially for form for you to manually write in the values.
-3. lease_dictionary.properties - Dictionary that fills in the lease above with values.
+2. lease_empty.properites - Dictionary that fills in the lease above with empty blank lines - essentially the form for you to manually write in the values.
+3. lease.properties - Dictionary that fills in the lease above with sample values.
 
 ## Building
 Gradle builds the application and uses the following plugins to build distributable artifacts.

@@ -1,3 +1,21 @@
+LEASE APPLICATION PACKET
+
+Prepared on ${month} ${day}, ${year}
+
+
+
+PROPERTY
+
+${rentalAddress}
+
+
+
+CONTENT
+
+1. Residential Lease
+
+
+<%newpage%>
 RESIDENTIAL LEASE
 
 This LEASE AGREEMENT is made this ${day} day of ${month}, ${year}, by and between ${landlordName}, LANDLORD, and ${tenantName}, TENANT.
@@ -14,7 +32,7 @@ Check One
 
 For and in consideration of the rent herein agreed to be paid, and the rights, and obligations of the respective parties agreed to herein, the Landlord hereby leases to the Tenant above named, and the Tenant leases from the Landlord, the following rental unit on the terms and conditions as stated in this Lease. Where "you" or "yours" appears in this lease, it shall refer to the Tenant.
 
-1. PROPERTY ADDRESS: ${rentalAddress} 
+1. PROPERTY ADDRESS: ${rentalAddress}
 
 2. TERM OF LEASE: Tenant leases the rental unit of the period of ${totalMonths} months beginning ${leaseStartDate} and continuing until ${leaseEndDate} at which time the lease term ends and the Landloard is entitled to the return of the rental unit as more fully described later in this Lease.
 
@@ -207,4 +225,9 @@ Date: ${signatureDate}    Landlord: ${signatureLandlord}
 
 
 
-Date: ${signatureDate}    Landlord: ${signatureTenant}
+Date: ${signatureDate}    Tenant: ${signatureTenant}
+
+
+
+
+Date: ${signatureDate}    Tenant: ${signatureTenant}

@@ -11,7 +11,9 @@ import java.util.stream.Stream;
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfWriter;
 import com.itextpdf.layout.Document;
+import com.itextpdf.layout.element.AreaBreak;
 import com.itextpdf.layout.element.Paragraph;
+import com.itextpdf.layout.property.AreaBreakType;
 
 import kkdt.eztemplate.TemplateWriter.TemplateOutput;
 
@@ -23,6 +25,7 @@ import kkdt.eztemplate.TemplateWriter.TemplateOutput;
  */
 public class PdfOut implements TemplateOutput {
     private final Document document;
+    private final String newpage;
     
     /**
      * Must supply the output stream.
@@ -30,14 +33,23 @@ public class PdfOut implements TemplateOutput {
      * @param output
      */
     public PdfOut(OutputStream output) {
-        document = new Document(new PdfDocument(new PdfWriter(output)));
+        this(output, "<%newpage%>");
+    }
+    
+    public PdfOut(OutputStream output, String newpage) {
+        this.document = new Document(new PdfDocument(new PdfWriter(output)));
+        this.newpage = newpage;
     }
 
     @Override
     public void accept(String t) {
         String lines[] = t.split("\\r?\\n");
         Stream.of(lines).forEach(p -> {
-            document.add(new Paragraph(p));
+            if(newpage.equals(p)) {
+                document.add(new AreaBreak(AreaBreakType.NEXT_PAGE));
+            } else {
+                document.add(new Paragraph(p));
+            }
         });
         document.close();
     }
