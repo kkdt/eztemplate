@@ -5,8 +5,7 @@
  */
 package kkdt.ezpdf.support;
 
-import java.awt.EventQueue;
-import java.awt.Window;
+import java.awt.Desktop;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
@@ -16,13 +15,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.util.Properties;
-import java.util.function.BiConsumer;
 
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
-import javax.swing.JTextField;
 
 import org.apache.commons.io.IOUtils;
+import org.springframework.core.env.Environment;
 
 import kkdt.eztemplate.TemplateFactory;
 import kkdt.eztemplate.pdf.PdfOut;
@@ -36,64 +34,7 @@ import kkdt.eztemplate.pdf.TemplateSubstitution;
  * @author thinh ho
  *
  */
-public abstract class UITemplateController implements ActionListener {
-    /**
-     * Listen for template|dictionary|generate actions.
-     * 
-     * @param parent
-     * @param fileChooser
-     * @param filename
-     * @param uiLogger
-     * @return
-     */
-    public static UITemplateController withActionListener(final Window parent, final JFileChooser fileChooser, 
-        JTextField templateFld, JTextField dictionaryFld, JTextField filename, UIStatusLogger uiLogger) 
-    {
-        BiConsumer<JTextField,String> setText = (f,t) -> {
-            EventQueue.invokeLater(() -> f.setText(t == null ? "" : t));
-        };
-        
-        UITemplateController local = new UITemplateController() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                switch(e.getActionCommand()) {
-                case "template":
-                    this.template = selectFile(fileChooser);
-                    if(this.template != null) {
-                        setText.accept(templateFld, this.template.getAbsolutePath());
-                        uiLogger.log("Template set: " + this.template.getAbsolutePath());
-                    } else {
-                        setText.accept(templateFld, "");
-                    }
-                    break;
-                case "dictionary":
-                    this.dictionary = selectFile(fileChooser);
-                    if(this.template != null) {
-                        setText.accept(dictionaryFld, this.dictionary.getAbsolutePath());
-                        uiLogger.log("Dictionary set: " + this.dictionary.getAbsolutePath());
-                    } else {
-                        setText.accept(dictionaryFld, "");
-                    }
-                    break;
-                case "generate":
-                    String output = filename.getText().trim();
-                    if("".equals(output)) {
-                        JOptionPane.showMessageDialog(null, "Please input an output file name", "Error", JOptionPane.ERROR_MESSAGE);
-                    } else {
-                        try {
-                            File pdf = this.handleSave(output);
-                            uiLogger.log("File saved: " + pdf.getAbsolutePath());
-                        } catch (IOException e1) {
-                            JOptionPane.showMessageDialog(null, "Cannot generate PDF: " + e1.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
-                        }
-                    }
-                    break;
-                }
-            }
-        };
-        return local;
-    }
-    
+public class UITemplateController implements ActionListener {
     /**
      * Helper to display the file chooser.
      * 
@@ -112,8 +53,19 @@ public abstract class UITemplateController implements ActionListener {
         return chosenfile;
     }
     
-    protected File template = null;
-    protected File dictionary = null;
+    private final Environment environment;
+    private final UIFrame window;
+    private final File workspace;
+    private JFileChooser fileChooser;
+    private File template = null;
+    private File dictionary = null;
+    
+    public UITemplateController(UIFrame window, Environment environment, File workspace) {
+        this.window = window;
+        this.environment = environment;
+        this.workspace = workspace;
+        this.fileChooser = new JFileChooser(workspace);
+    }
     
     /**
      * Generate the pdf file using the configured template and dictionary.
@@ -139,10 +91,73 @@ public abstract class UITemplateController implements ActionListener {
             input = IOUtils.toString(stream, charset);
         }
         
-        File file = new File(filename);
+        File file = workspace.toPath().resolve(filename).toFile();
         try(FileOutputStream out = new FileOutputStream(file)) {
             TemplateFactory.buildTemplates(input, new TemplateSubstitution(properties), new PdfOut(out));
         }
         return file;
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        switch(e.getActionCommand()) {
+        case "Exit":
+            System.exit(0);
+            break;
+        case "About":
+            handleAbout();
+            break;
+        case "templateInfo":
+            {
+                String text = environment.getProperty("ezpdf.info.template");
+                JOptionPane.showMessageDialog(window, text, "Template",JOptionPane.PLAIN_MESSAGE);
+            }
+            break;
+        case "dictionaryInfo":
+            {
+                String text = environment.getProperty("ezpdf.info.dictionary");
+                JOptionPane.showMessageDialog(window, text, "Dictionary",JOptionPane.PLAIN_MESSAGE);
+            }
+            break;
+        case "saveInfo":
+            {
+                String text = environment.getProperty("ezpdf.info.filename");
+                JOptionPane.showMessageDialog(window, text, "Filename",JOptionPane.PLAIN_MESSAGE);
+            }
+            break;
+        case "template":
+            this.template = selectFile(fileChooser);
+            window.setTemplate(template != null ? template.getAbsolutePath() : "");
+            break;
+        case "dictionary":
+            this.dictionary = selectFile(fileChooser);
+            window.setDictionary(dictionary != null ? dictionary.getAbsolutePath() : "");
+            break;
+        case "generate":
+            String output = window.getFilename();
+            if("".equals(output)) {
+                JOptionPane.showMessageDialog(null, "Please input an output file name", "Error", JOptionPane.ERROR_MESSAGE);
+            } else {
+                try {
+                    File pdf = this.handleSave(output);
+                    Desktop.getDesktop().open(pdf);
+                } catch (IOException e1) {
+                    JOptionPane.showMessageDialog(null, "Cannot generate PDF: " + e1.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+                }
+            }
+            break;
+        }
+    }
+    
+    private void handleAbout() {
+        Package p = UIApplicationConfiguration.class.getPackage();
+        String version = p.getImplementationVersion();
+        String spec = p.getSpecificationVersion();
+        String vendor = p.getImplementationVendor();
+        StringBuilder buffer = new StringBuilder(p.getImplementationTitle() != null ? p.getImplementationTitle() : "EzPDF");
+        buffer.append("\nVersion: " + version);
+        buffer.append("\nSpecification: " + p.getSpecificationTitle() + " " + spec);
+        buffer.append("\nAuthor: " + vendor);
+        JOptionPane.showMessageDialog(null, buffer.toString(),"About",JOptionPane.INFORMATION_MESSAGE, UIApplicationConfiguration.getIcon("img/ezpdf.png"));
     }
 }

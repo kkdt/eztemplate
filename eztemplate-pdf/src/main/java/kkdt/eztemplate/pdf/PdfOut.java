@@ -25,6 +25,7 @@ import kkdt.eztemplate.TemplateWriter.TemplateOutput;
  */
 public class PdfOut implements TemplateOutput {
     private final Document document;
+    private final PdfDocument pdf;
     private final String newpage;
     
     /**
@@ -37,7 +38,8 @@ public class PdfOut implements TemplateOutput {
     }
     
     public PdfOut(OutputStream output, String newpage) {
-        this.document = new Document(new PdfDocument(new PdfWriter(output)));
+        this.pdf = new PdfDocument(new PdfWriter(output));
+        this.document = new Document(pdf);
         this.newpage = newpage;
     }
 
@@ -51,6 +53,7 @@ public class PdfOut implements TemplateOutput {
                 document.add(new Paragraph(p));
             }
         });
+        
         document.close();
     }
     

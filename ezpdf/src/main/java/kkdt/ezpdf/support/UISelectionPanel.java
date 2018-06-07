@@ -8,22 +8,13 @@ package kkdt.ezpdf.support;
 import java.awt.BorderLayout;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
-import java.awt.Insets;
-import java.awt.Window;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.awt.event.ActionListener;
 
+import javax.swing.Box;
 import javax.swing.JButton;
-import javax.swing.JFileChooser;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
 import javax.swing.JTextField;
-
-import org.springframework.core.env.Environment;
 
 /**
  * The main content panel.
@@ -34,30 +25,62 @@ import org.springframework.core.env.Environment;
 public class UISelectionPanel extends JPanel {
     private static final long serialVersionUID = 5527561374187216268L;
 
-    private final Environment environment;
-    private JTextArea statusArea;
     private JButton templateBtn, templateInfo;
     private JButton dictionaryBtn, dictionaryInfo;
     private JButton saveBtn, saveInfo;
     private JTextField filename;
     private JTextField template;
     private JTextField dictionary;
-    private JFileChooser fileChooser; 
-    private UIStatusLogger uiLogger;
-    private Window parent;
     
-    public UISelectionPanel(Window parent, Environment environment) {
-        this.parent = parent;
-        this.environment = environment;
+    public UISelectionPanel() {
         initComponents();
         layoutComponents();
-        
-        // attach the controller
-        UITemplateController uiTemplateController = 
-            UITemplateController.withActionListener(parent, fileChooser, template, dictionary, filename, uiLogger);
-        templateBtn.addActionListener(uiTemplateController);
-        dictionaryBtn.addActionListener(uiTemplateController);
-        saveBtn.addActionListener(uiTemplateController);
+    }
+    
+    public UISelectionPanel templateListener(ActionListener l) {
+        templateBtn.addActionListener(l);
+        return this;
+    }
+    
+    public UISelectionPanel templateInfoListener(ActionListener l) {
+        templateInfo.addActionListener(l);
+        return this;
+    }
+    
+    public UISelectionPanel dictionaryListener(ActionListener l) {
+        dictionaryBtn.addActionListener(l);
+        return this;
+    }
+    
+    public UISelectionPanel dictionaryInfoListener(ActionListener l) {
+        dictionaryInfo.addActionListener(l);
+        return this;
+    }
+    
+    public UISelectionPanel saveListener(ActionListener l) {
+        saveBtn.addActionListener(l);
+        return this;
+    }
+    
+    public UISelectionPanel saveInfoListener(ActionListener l) {
+        saveInfo.addActionListener(l);
+        return this;
+    }
+    
+    public void setTemplate(String template) {
+        this.template.setText(template);
+    }
+    
+    public void setDictionary(String dictionary) {
+        this.dictionary.setText(dictionary);
+    }
+    
+    public void setFilename(String filename) {
+        this.filename.setText(filename);
+    }
+    
+    public String getFilename() {
+        return filename.getText().trim();
     }
     
     private void initComponents() {
@@ -66,51 +89,30 @@ public class UISelectionPanel extends JPanel {
         templateBtn.setToolTipText("Choose template file");
         
         templateInfo = new JButton(UIApplicationConfiguration.getIcon("img/info.png"));
+        templateInfo.setActionCommand("templateInfo");
         templateInfo.setToolTipText("A template file contains placeholder(s)");
-        templateInfo.addActionListener(e -> {
-            String text = environment.getProperty("ezpdf.info.template");
-            JOptionPane.showMessageDialog(parent, text, "Template",JOptionPane.PLAIN_MESSAGE);
-        });
         
         dictionaryBtn = new JButton(UIApplicationConfiguration.getIcon("img/open.png"));
         dictionaryBtn.setActionCommand("dictionary");
         dictionaryBtn.setToolTipText("Choose dictionary file");
         
         dictionaryInfo = new JButton(UIApplicationConfiguration.getIcon("img/info.png"));
+        dictionaryInfo.setActionCommand("dictionaryInfo");
         dictionaryInfo.setToolTipText("A dictionary file contains key-value pair(s)");
-        dictionaryInfo.addActionListener(e -> {
-            String text = environment.getProperty("ezpdf.info.dictionary");
-            JOptionPane.showMessageDialog(parent, text, "Dictionary",JOptionPane.PLAIN_MESSAGE);
-        });
         
         saveBtn = new JButton(UIApplicationConfiguration.getIcon("img/save.png"));
         saveBtn.setActionCommand("generate");
         saveBtn.setToolTipText("Generate file");
         
         saveInfo = new JButton(UIApplicationConfiguration.getIcon("img/info.png"));
+        saveInfo.setActionCommand("saveInfo");
         saveInfo.setToolTipText("Generate pdf");
-        saveInfo.addActionListener(e -> {
-            String text = environment.getProperty("ezpdf.info.filename");
-            JOptionPane.showMessageDialog(parent, text, "Filename",JOptionPane.PLAIN_MESSAGE);
-        });
         
-        statusArea = new JTextArea(10,30);
-        statusArea.setMargin(new Insets(5,5,5,5));
-        statusArea.setEditable(false);
-        statusArea.setWrapStyleWord(true);
-        
-        filename = new JTextField(20);
-        template = new JTextField(20);
+        filename = new JTextField(40);
+        template = new JTextField(40);
         template.setEditable(false);
-        dictionary = new JTextField(20);
+        dictionary = new JTextField(40);
         dictionary.setEditable(false);
-        
-        uiLogger = message -> {
-            final DateFormat df = new SimpleDateFormat("YYYY-MM-dd HH:mm:SS");
-            statusArea.append("[" + df.format(new Date()) + "] " + message + "\n");
-        };
-        
-        fileChooser = new JFileChooser();
     }
     
     private void layoutComponents() {
@@ -205,7 +207,8 @@ public class UISelectionPanel extends JPanel {
         panel3.add(panel0, BorderLayout.CENTER);
         
         setLayout(new BorderLayout());
-        add(panel3, BorderLayout.PAGE_START);
-        add(new JScrollPane(statusArea), BorderLayout.CENTER);
+        add(Box.createHorizontalStrut(10), BorderLayout.WEST);
+        add(panel3, BorderLayout.CENTER);
+        add(Box.createHorizontalStrut(10), BorderLayout.EAST);
     }
 }
