@@ -6,6 +6,7 @@
 package kkdt.ezpdf.support;
 
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.Image;
@@ -44,10 +45,12 @@ public class UIApplicationConfiguration implements ApplicationListener<Initializ
         
         UIBuilder builder = new UIBuilder(environment);
         JFrame window = builder.build();
+        // exception handler
+        Thread.setDefaultUncaughtExceptionHandler(new DefaultExceptionHandler(window));
         window.pack();
         SwingUtilities.updateComponentTreeUI(window);
         EventQueue.invokeLater(() -> {
-            window.setResizable(false);
+            window.setMinimumSize(new Dimension(450, 400));
             window.setVisible(true);
         });
     }
@@ -102,8 +105,8 @@ public class UIApplicationConfiguration implements ApplicationListener<Initializ
         UIManager.put("Table.alternateRowColor", new Color(240, 240, 240));
         
         try {
-            UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
-//            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+//            UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         } catch (Exception e) {
             logger.error("Cannot start application", e);
             System.exit(-1);

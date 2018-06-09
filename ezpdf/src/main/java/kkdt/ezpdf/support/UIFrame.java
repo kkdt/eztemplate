@@ -68,9 +68,11 @@ public class UIFrame extends JFrame {
      * The main contents will be a <code>UISelectionPanel</code>.
      * 
      * @param contents
+     * @param panel
      */
-    public void setContents(UISelectionPanel contents) {
-        getContentPane().add(contents, BorderLayout.CENTER);
+    public void setContents(UISelectionPanel contents, TemplateResultsPanel panel) {
+        getContentPane().add(contents, BorderLayout.NORTH);
+        getContentPane().add(panel, BorderLayout.CENTER);
         this.contents = contents;
     }
     

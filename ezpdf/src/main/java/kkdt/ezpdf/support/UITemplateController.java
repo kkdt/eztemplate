@@ -22,13 +22,25 @@ import javax.swing.JOptionPane;
 import org.apache.commons.io.IOUtils;
 import org.springframework.core.env.Environment;
 
+import kkdt.ezpdf.support.table.TemplateEntry;
+import kkdt.ezpdf.support.table.TemplateTableController;
 import kkdt.eztemplate.TemplateFactory;
 import kkdt.eztemplate.pdf.PdfOut;
 import kkdt.eztemplate.pdf.TemplateSubstitution;
 
 /**
  * <p>
- * The main UI controller that handles 3 actions: template, dictionary, and generate.
+ * The main UI controller that handles the following actions
+ * <ol>
+ * <li>Exit</li>
+ * <li>About</li>
+ * <li>templateInfo</li>
+ * <li>dictionaryInfo</li>
+ * <li>saveInfo</li>
+ * <li>template</li>
+ * <li>dictionary</li>
+ * <li>generate</li>
+ * </ol>
  * </p>
  * 
  * @author thinh ho
@@ -55,16 +67,18 @@ public class UITemplateController implements ActionListener {
     
     private final Environment environment;
     private final UIFrame window;
+    private final TemplateTableController tableController;
     private final File workspace;
     private JFileChooser fileChooser;
     private File template = null;
     private File dictionary = null;
     
-    public UITemplateController(UIFrame window, Environment environment, File workspace) {
+    public UITemplateController(UIFrame window, Environment environment, File workspace, TemplateTableController tableController) {
         this.window = window;
         this.environment = environment;
         this.workspace = workspace;
         this.fileChooser = new JFileChooser(workspace);
+        this.tableController = tableController;
     }
     
     /**
@@ -139,7 +153,17 @@ public class UITemplateController implements ActionListener {
                 JOptionPane.showMessageDialog(null, "Please input an output file name", "Error", JOptionPane.ERROR_MESSAGE);
             } else {
                 try {
+                    // generate
                     File pdf = this.handleSave(output);
+                    
+                    // add to results table
+                    TemplateEntry entry = new TemplateEntry();
+                    entry.setDictionary(dictionary);
+                    entry.setTemplate(template);
+                    entry.setOutput(pdf);
+                    tableController.addEntry(entry);
+                    
+                    // display using desktop default app
                     Desktop.getDesktop().open(pdf);
                 } catch (IOException e1) {
                     JOptionPane.showMessageDialog(null, "Cannot generate PDF: " + e1.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
