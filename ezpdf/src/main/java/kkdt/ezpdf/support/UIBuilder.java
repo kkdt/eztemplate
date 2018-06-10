@@ -45,7 +45,7 @@ public class UIBuilder {
         JTable table = new JTable();
         table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         TemplateTableController tableController = new TemplateTableController(table);
-        TemplateResultActionListener templateActionListener = new TemplateResultActionListener(window, tableController);
+        TemplateResultActionListener templateActionListener = new TemplateResultActionListener(window, tableController, new PdfGenerator(workspace));
         
         UITemplateController uiController = new UITemplateController(window, environment, workspace, tableController);
         
@@ -62,6 +62,7 @@ public class UIBuilder {
         TemplateResultsPanel results = new TemplateResultsPanel(table)
             .deleteListener(templateActionListener)
             .viewListener(templateActionListener)
+            .regenerateListener(templateActionListener)
             .layoutComponents();
         results.enableActions(false);
         

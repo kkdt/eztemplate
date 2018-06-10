@@ -9,24 +9,15 @@ import java.awt.Desktop;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.nio.charset.Charset;
-import java.util.Properties;
 
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 
-import org.apache.commons.io.IOUtils;
 import org.springframework.core.env.Environment;
 
 import kkdt.ezpdf.support.table.TemplateEntry;
 import kkdt.ezpdf.support.table.TemplateTableController;
-import kkdt.eztemplate.TemplateFactory;
-import kkdt.eztemplate.pdf.PdfOut;
-import kkdt.eztemplate.pdf.TemplateSubstitution;
 
 /**
  * <p>
@@ -68,7 +59,7 @@ public class UITemplateController implements ActionListener {
     private final Environment environment;
     private final UIFrame window;
     private final TemplateTableController tableController;
-    private final File workspace;
+    private final PdfGenerator pdfGenerator;
     private JFileChooser fileChooser;
     private File template = null;
     private File dictionary = null;
@@ -76,7 +67,7 @@ public class UITemplateController implements ActionListener {
     public UITemplateController(UIFrame window, Environment environment, File workspace, TemplateTableController tableController) {
         this.window = window;
         this.environment = environment;
-        this.workspace = workspace;
+        this.pdfGenerator = new PdfGenerator(workspace);
         this.fileChooser = new JFileChooser(workspace);
         this.tableController = tableController;
     }
@@ -93,23 +84,7 @@ public class UITemplateController implements ActionListener {
             JOptionPane.showMessageDialog(null, "Missing template/dictionary files", "Error", JOptionPane.ERROR_MESSAGE);
             return null;
         }
-        
-        final Properties properties = new Properties();
-        try (final InputStream stream = new FileInputStream(dictionary)) {
-            properties.load(stream);
-        }
-        
-        String input = null;
-        try (final InputStream stream = new FileInputStream(template)) {
-            Charset charset = Charset.defaultCharset();
-            input = IOUtils.toString(stream, charset);
-        }
-        
-        File file = workspace.toPath().resolve(filename).toFile();
-        try(FileOutputStream out = new FileOutputStream(file)) {
-            TemplateFactory.buildTemplates(input, new TemplateSubstitution(properties), new PdfOut(out));
-        }
-        return file;
+        return pdfGenerator.generate(template, dictionary, filename);
     }
 
     @Override

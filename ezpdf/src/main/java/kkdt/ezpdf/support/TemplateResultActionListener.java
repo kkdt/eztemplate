@@ -9,6 +9,7 @@ import java.awt.Desktop;
 import java.awt.Window;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 import java.nio.file.Files;
 
 import javax.swing.JOptionPane;
@@ -25,10 +26,12 @@ import kkdt.ezpdf.support.table.TemplateTableController;
 public class TemplateResultActionListener implements ActionListener {
     private final Window reference;
     private final TemplateTableController tableController;
+    private final PdfGenerator pdfGenerator;
     
-    public TemplateResultActionListener(Window reference, TemplateTableController tableController) {
+    public TemplateResultActionListener(Window reference, TemplateTableController tableController, PdfGenerator generator) {
         this.reference = reference;
         this.tableController = tableController;
+        this.pdfGenerator = generator;
     }
 
     @Override
@@ -38,9 +41,8 @@ public class TemplateResultActionListener implements ActionListener {
             return;
         }
         
-        TemplateEntry selected = tableController.getSelectedEntry();
-        
         try {
+            TemplateEntry selected = tableController.getSelectedEntry();
             switch(e.getActionCommand()) {
             case "Delete":
                 Files.delete(selected.getOutput().toPath());
@@ -48,6 +50,10 @@ public class TemplateResultActionListener implements ActionListener {
                 break;
             case "View":
                 Desktop.getDesktop().open(selected.getOutput());
+                break;
+            case "Regenerate":
+                File pdf = pdfGenerator.generate(selected.getTemplate(), selected.getDictionary(), selected.getOutput().getName());
+                Desktop.getDesktop().open(pdf);
                 break;
             }
         } catch (Exception er) {

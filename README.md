@@ -15,9 +15,9 @@ This project comprises of 3 modules that provide a way for the user to generate 
 
 Ez Pdf is a simple standalone, thick-client application that runs on the user's local machine. Application data is saved in `$HOME/.ezpdf` which only includes a log file. Prebuilt application artifacts on Dropbox can be found below and support Mac, Windows and Linux.
 
-1. Mac [ezpdf-0.2.dmg](https://www.dropbox.com/s/uuoofhhse3wzijz/ezpdf-0.2.dmg?dl=0)
-2. Linux/Windows [ezpdf-0.2.tar](https://www.dropbox.com/s/vhk22c2wqlox7x8/ezpdf-0.2.tar?dl=0)
-3. Linux/Windows [ezpdf-0.2.zip](https://www.dropbox.com/s/8437g5tja6ys5kf/ezpdf-0.2.zip?dl=0)
+1. Mac [ezpdf-0.2.dmg](https://www.dropbox.com/s/wtustxe129vi5b1/ezpdf-0.2.dmg?dl=0)
+2. Linux/Windows [ezpdf-0.2.tar](https://www.dropbox.com/s/s23vc62e8799mng/ezpdf-0.2.tar?dl=0)
+3. Linux/Windows [ezpdf-0.2.zip](https://www.dropbox.com/s/kuc9r0dsdxzgpq8/ezpdf-0.2.zip?dl=0)
 
 ### Common Use Case
 

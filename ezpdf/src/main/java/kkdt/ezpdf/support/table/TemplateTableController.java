@@ -10,6 +10,12 @@ import javax.swing.JTable;
 import kkdt.generictable.GenericTableController;
 import kkdt.generictable.GenericTableModel;
 
+/**
+ * A table controller for generated templates.
+ * 
+ * @author thinh ho
+ *
+ */
 public class TemplateTableController extends GenericTableController<TemplateEntry> {
     private final JTable table;
     

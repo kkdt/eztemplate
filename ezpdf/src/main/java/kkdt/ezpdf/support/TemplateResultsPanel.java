@@ -28,11 +28,13 @@ public class TemplateResultsPanel extends JPanel {
     private final JTable table;
     private final JButton viewBtn;
     private final JButton deleteBtn;
+    private final JButton regenerateBtn;
     
     public TemplateResultsPanel(JTable table) {
         this.table = table;
         this.viewBtn = new JButton("View");
         this.deleteBtn = new JButton("Delete");
+        this.regenerateBtn = new JButton("Regenerate");
     }
     
     public TemplateResultsPanel viewListener(ActionListener l) {
@@ -42,6 +44,11 @@ public class TemplateResultsPanel extends JPanel {
     
     public TemplateResultsPanel deleteListener(ActionListener l) {
         this.deleteBtn.addActionListener(l);
+        return this;
+    }
+    
+    public TemplateResultsPanel regenerateListener(ActionListener l) {
+        this.regenerateBtn.addActionListener(l);
         return this;
     }
     
@@ -55,6 +62,7 @@ public class TemplateResultsPanel extends JPanel {
         JPanel panel1 = new JPanel();
         panel1.add(viewBtn);
         panel1.add(deleteBtn);
+        panel1.add(regenerateBtn);
         
         setBorder(BorderFactory.createEtchedBorder(EtchedBorder.LOWERED));
         setLayout(new BorderLayout());
@@ -68,5 +76,6 @@ public class TemplateResultsPanel extends JPanel {
     public void enableActions(boolean enable) {
         this.viewBtn.setEnabled(enable);
         this.deleteBtn.setEnabled(enable);
+        this.regenerateBtn.setEnabled(enable);
     }
 }
