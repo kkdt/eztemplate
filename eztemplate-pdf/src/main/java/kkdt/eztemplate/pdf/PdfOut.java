@@ -24,9 +24,11 @@ import kkdt.eztemplate.TemplateWriter.TemplateOutput;
  *
  */
 public class PdfOut implements TemplateOutput {
-    private final Document document;
-    private final PdfDocument pdf;
-    private final String newpage;
+    public static final String DefaultNewPage = "<%newpage%>";
+    
+    protected final Document document;
+    protected final PdfDocument pdf;
+    protected final String newpage;
     
     /**
      * Must supply the output stream.
@@ -34,7 +36,7 @@ public class PdfOut implements TemplateOutput {
      * @param output
      */
     public PdfOut(OutputStream output) {
-        this(output, "<%newpage%>");
+        this(output, DefaultNewPage);
     }
     
     public PdfOut(OutputStream output, String newpage) {
@@ -45,7 +47,7 @@ public class PdfOut implements TemplateOutput {
 
     @Override
     public void accept(String t) {
-        String lines[] = t.split("\\r?\\n");
+        String lines[] = tokenize(t);
         Stream.of(lines).forEach(p -> {
             if(newpage.equals(p)) {
                 document.add(new AreaBreak(AreaBreakType.NEXT_PAGE));
@@ -62,6 +64,16 @@ public class PdfOut implements TemplateOutput {
         return String.format("Document: %s, PDF: %s",
             "" + document, 
             "" + document.getPdfDocument());
+    }
+    
+    /**
+     * Tokenize the specified buffer into line(s) for text.
+     * 
+     * @param buffer
+     * @return
+     */
+    protected String[] tokenize(String buffer) {
+        return buffer.split("\\r?\\n");
     }
 
 }

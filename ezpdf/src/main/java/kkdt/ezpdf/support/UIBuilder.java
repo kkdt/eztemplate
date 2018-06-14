@@ -17,6 +17,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTable;
 import javax.swing.ListSelectionModel;
+import javax.swing.SwingUtilities;
 
 import org.springframework.core.env.Environment;
 
@@ -87,6 +88,11 @@ public class UIBuilder {
                 results.enableActions(tableController.getSelectedEntry() != null);
             }
         });
+        
+        // when the user delete or add an entry, enable the actions accordingly
+        table.getModel().addTableModelListener(e -> 
+            SwingUtilities.invokeLater(() -> 
+                results.enableActions(tableController.getSelectedEntry() != null)));
         
 //        for(int i = 0; i < 10; i++) {
 //            TemplateEntry e = new TemplateEntry();

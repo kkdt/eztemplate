@@ -45,8 +45,8 @@ public class TemplateResultActionListener implements ActionListener {
             TemplateEntry selected = tableController.getSelectedEntry();
             switch(e.getActionCommand()) {
             case "Delete":
-                Files.delete(selected.getOutput().toPath());
                 tableController.removeSelectedEntry();
+                Files.delete(selected.getOutput().toPath());
                 break;
             case "View":
                 Desktop.getDesktop().open(selected.getOutput());

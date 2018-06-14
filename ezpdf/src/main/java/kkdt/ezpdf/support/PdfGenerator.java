@@ -15,8 +15,9 @@ import java.util.Properties;
 
 import org.apache.commons.io.IOUtils;
 
+import kkdt.eztemplate.PassThroughTranslator;
 import kkdt.eztemplate.TemplateFactory;
-import kkdt.eztemplate.pdf.PdfOut;
+import kkdt.eztemplate.pdf.FormattedPlaceholderPdfOut;
 import kkdt.eztemplate.pdf.TemplateSubstitution;
 
 /**
@@ -46,7 +47,9 @@ public class PdfGenerator {
         
         File file = outputDir.toPath().resolve(filename).toFile();
         try(FileOutputStream out = new FileOutputStream(file)) {
-            TemplateFactory.buildTemplates(input, new TemplateSubstitution(properties), new PdfOut(out));
+            FormattedPlaceholderPdfOut pdf = new FormattedPlaceholderPdfOut(out);
+            pdf.setTranslator(new TemplateSubstitution(properties));
+            TemplateFactory.buildTemplates(input, new PassThroughTranslator(), pdf);
         }
         return file;
     }

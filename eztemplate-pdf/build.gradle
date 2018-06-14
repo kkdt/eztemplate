@@ -6,12 +6,25 @@
 
 description = 'PDF template generation'
 
+sourceSets {
+    integrationTest {
+        java {
+            compileClasspath += main.output + test.output
+            runtimeClasspath += main.output + test.output
+            srcDir file('src/integration-test/java')
+        }
+        resources.srcDir file('src/integration-test/resources')
+    }
+}
+
+
 dependencies {
     compile project(':eztemplate-core')
     
     compile 'com.itextpdf:kernel:7.0.4'
     compile 'com.itextpdf:io:7.0.4'
     compile 'com.itextpdf:layout:7.0.4'
+    
     compile 'commons-lang:commons-lang:2.6'
     compile 'commons-io:commons-io:2.5'
 }
