@@ -7,9 +7,16 @@ package kkdt.ezpdf.support.table;
 
 import java.io.File;
 
+import kkdt.generictable.OrderedColumn;
+
 public class TemplateEntry {
+    @OrderedColumn(index=0, displayName="Template", name="Template", type=File.class)
     private File template;
+    
+    @OrderedColumn(index=1, displayName="Dictionary", name="Dictionary", type=File.class)
     private File dictionary;
+    
+    @OrderedColumn(index=2, displayName="Output", name="Output", type=File.class)
     private File output;
 
     public File getOutput() {

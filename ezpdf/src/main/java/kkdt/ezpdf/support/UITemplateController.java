@@ -125,9 +125,16 @@ public class UITemplateController implements ActionListener {
         case "generate":
             String output = window.getFilename();
             if("".equals(output)) {
-                JOptionPane.showMessageDialog(null, "Please input an output file name", "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(window, "Please input an output file name", "Error", JOptionPane.ERROR_MESSAGE);
             } else {
                 try {
+                    for(int i = 0; i < tableController.getTable().getRowCount(); i++) {
+                        if(tableController.getEntryAt(i).getOutput().getName().equals(output)) {
+                            JOptionPane.showMessageDialog(window, "Please input an different output file name", "Error", JOptionPane.ERROR_MESSAGE);
+                            return;
+                        }
+                    }
+                    
                     // generate
                     File pdf = this.handleSave(output);
                     

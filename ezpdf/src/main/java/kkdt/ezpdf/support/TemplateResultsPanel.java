@@ -24,7 +24,8 @@ import javax.swing.border.EtchedBorder;
  */
 public class TemplateResultsPanel extends JPanel {
     private static final long serialVersionUID = 3410067187732462130L;
-
+    private static final Dimension defaultButtonSize = new Dimension(100, 25);
+    
     private final JTable table;
     private final JButton viewBtn;
     private final JButton deleteBtn;
@@ -33,8 +34,11 @@ public class TemplateResultsPanel extends JPanel {
     public TemplateResultsPanel(JTable table) {
         this.table = table;
         this.viewBtn = new JButton("View");
+        this.viewBtn.setPreferredSize(defaultButtonSize);
         this.deleteBtn = new JButton("Delete");
+        this.deleteBtn.setPreferredSize(defaultButtonSize);
         this.regenerateBtn = new JButton("Regenerate");
+        this.regenerateBtn.setPreferredSize(defaultButtonSize);
     }
     
     public TemplateResultsPanel viewListener(ActionListener l) {
